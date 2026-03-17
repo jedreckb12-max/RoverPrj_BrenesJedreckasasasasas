@@ -45,6 +45,7 @@ public class Rover{
         }
         if (detectarFugaCalor()){
             registrarMandato("moverAdelante", "no posible");
+            return;
         }
         
         posicionY += 1;
@@ -95,7 +96,7 @@ public class Rover{
         
         posicionX -= 1;
         potenciaDisponible -= costoMovimiento;
-        registrarMandato("moverIzquiera", "exitoso");
+        registrarMandato("moverIzquierda", "exitoso");
     }
     
     public boolean detectarFugaCalor(){
